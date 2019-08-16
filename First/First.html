@@ -1,0 +1,89 @@
+<html>
+  <head>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <style>
+   	 .bs .row > .col, .bs .row > [class^="col-"] {
+   		padding-top: 75 rem;
+   		padding-bottom: 75 rem;
+   		background-color: #5a6268;
+   		border: 1px solid #000;
+   		color: #fff;
+   	}
+   </style>
+  </head>
+  <body>
+  	<div class="bs">
+  	 <div class="container">
+  		 <h3>Колонки одинаковой ширины</h3>
+  		 <div class="row">
+  			<div class="col"> col </div>
+  			<div class="col"> col </div>
+  		 </div>
+  		 <h3 class="mt-5">Установка ширины одного столбца</h3>
+  		 <div class="row">
+  			<div class="col"> Sidebar1 </div>
+  			<div class="col-6"> Content </div>
+  			<div class="col"> Sidebar2 </div>
+  		 </div>
+  		 <h3 class="mt-5">Содержание переменной ширины</h3>
+  		 <div class="row">
+  			<div class="col"> Sidebar1 </div> 
+  			<div class="col-6"> Content </div> 
+  			<div class="col-auto"> Sidebar2 </div> <!--это auto для того, чтобы отводилось ровно столько колонок, сколько нужно для отображения контента -->
+  		 </div>
+  		 <h3 class="mt-5">Колонки одинаковой ширины в несколько строк</h3>
+  		 <div class="row">
+  			<div class="col"> col </div>
+  			<div class="col"> col </div>
+  			<div class="w-100"></div><!--это для того, чтобы сделать в два ряда колонки-->
+  			<div class="col"> col </div>
+  			<div class="col"> col </div>
+  		 </div>
+  		 <!-- -->
+  		 <h3 class="mt-5">breakpoints</h3>
+  		 <h3>Складывание колонок по горизонтали</h3>
+  		 <div class="row">
+  			<div class="col-lg"> col </div><!--складывание колонок произойдет на контрольной точке меньше lg-->
+  			<div class="col-lg"> col </div>
+  			<div class="col-lg"> col </div>
+  			
+  		 </div>
+
+  		 <!--Вот тут вот оно не так робит как нужно и до конца, а выше до Breakpoints все так-->
+
+  		 <!-- <br>
+       <br>
+       <h3>Какое здесь должно быть расположение ? (Пункт1)</h3> -->
+  		 <div class="row">
+  			<div class="col-md-4"> Sidebar  </div>
+  			<div class="col-md-8"> Content  </div>  			
+  		 </div>
+<!-- 
+  		 <br>
+       <br>
+       <h3>Какое здесь должно быть расположение ? (Пункт2)</h3> -->
+  		 <div class="row">
+  			<div class="col-md-3"> Sidebar1 </div>
+  			<div class="col-md-6"> Content </div> 
+  			<div class="col-md-3"> Sidebar2 </div> 			
+  		 </div>
+        
+        <!-- <br>
+        <br>
+        <h3>Какое здесь должно быть расположение ? (Пункт3)</h3> -->
+  		 <h3 class="mt-5">Комбинирование классов</h3>
+  		 <div class="row">
+  			<div class="col-md-3 col-sm-4"> Sidebar1 </div>
+  			<div class="col-md-6 col-sm-8"> Content </div> 
+  			<div class="col-md-3"> Sidebar2 </div> 			
+  		 </div>
+  	   </div>
+  	</div>
+ 
+
+ <!-- Это скрипты для BS из документации. Подключай их, пожалуйста. Не забывай про них, иначе они будут грустить-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+ </html>
